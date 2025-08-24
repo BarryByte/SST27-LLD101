@@ -4,4 +4,8 @@ public class Frame {
     { 
         this.data=d; 
     } 
+
+    public int size(){
+        return data.length;
+    }
 }

@@ -11,3 +11,7 @@ Tasks:
 - Identify the SOLID violation(s)
 - Refactor to comply with all SOLID principles
 - Keep behavior; add a tiny demo/test
+
+
+Observations : 
+Player.java is doing 3 things at once -> violating SRP

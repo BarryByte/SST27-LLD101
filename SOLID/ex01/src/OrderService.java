@@ -1,17 +1,15 @@
 public class OrderService {
-    double taxRate = 0.18;
     // EmailClient email = new EmailClient();
+    Utility utility;
     INotificationSender notificationSender;
 
-    public OrderService(INotificationSender notificationSender){
+    public OrderService(INotificationSender notificationSender,Utility utility){
         this.notificationSender = notificationSender; 
+        this.utility = utility;
     }
-
-    double totalWithTax(double subtotal) {
-        return subtotal + subtotal * taxRate;
-    }
+    
     void checkout(String customerEmail, double subtotal) {
-        double total = totalWithTax(subtotal);
+        double total = utility.totalWithTax(subtotal);
         notificationSender.send(customerEmail, "Thanks! Your total is " + total);
         System.out.println("Order stored (pretend DB).");
     }
