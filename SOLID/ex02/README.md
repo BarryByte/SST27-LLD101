@@ -15,3 +15,6 @@ Tasks:
 
 Observations : 
 Player.java is doing 3 things at once -> violating SRP
+create interface for cache, decoder, render 
+
+what if in future we use int[] instead of byte[] array ? 
