@@ -4,7 +4,7 @@ Narrative: CLI app loads settings and exposes them globally. Current design is n
 not thread-safe, and vulnerable to reflection/serialization.
 
 Tasks
-1) Make AppSettings a proper, thread-safe singleton (lazy init; private ctor).
+1) Make AppSettings a proper, thread-safe singleton (lazy init; private ctor). 
 2) Block reflection-based multiple construction and preserve singleton on serialization (readResolve).
 3) Update SettingsLoader to use the singleton (no 'new').
 
