@@ -18,4 +18,10 @@ public enum ShipmentState implements ShippingCost {
         }
     };
 
+    // this is violating SRP , as there are more than one reason to modify this file 
+
+    // could work on small list of enums
+
+    // 
+
 }

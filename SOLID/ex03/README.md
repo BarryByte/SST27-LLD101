@@ -16,4 +16,6 @@ Tasks:
 Observations : 
 there should be no if(s) inside caclulator
 
-make enums for all shipmentStates , each enum having thier own method to calculate shipment cost
+make enums for all shipmentStates , each enum having thier own method to calculate shipment cost -> Wrong...
+
+

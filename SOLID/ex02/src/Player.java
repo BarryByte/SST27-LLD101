@@ -4,7 +4,6 @@ public class Player {
         // decode
         Frame f = new Frame(fileBytes); // pretend decoding
         
-
         // draw UI
         // System.out.println("\u25B6 Playing " + fileBytes.length + " bytes");
         Render render = new Render(fileBytes);
